@@ -1,4 +1,4 @@
-function filter(list, predicate) {
+export function filter(list, predicate) {
     const new_list = []
 
     for(let i=0,len=list.length;i<len;i++) {
@@ -6,5 +6,3 @@ function filter(list, predicate) {
     }
     return new_list
 }
-
-module.exports = { filter }
