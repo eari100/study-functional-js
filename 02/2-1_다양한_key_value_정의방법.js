@@ -21,3 +21,14 @@ console.log(obj3)
 var obj4 = { 1: 10 }
 obj4[2] = 20
 console.log(obj4)
+
+// {} 안쪽의 key 영역에서는 코드를 실행할 수 없다
+// var obj5 = { (true ? "a" : "b"):1 }
+
+// [] 안에는 문자열 가능, 코드 실행 가능
+var obj6 = {}
+obj6[true ? "a" : "b"] = 1
+console.log(obj6)
+
+var obj7 = { [true ? "a" : "b"]: 1 }
+console.log(obj7)
