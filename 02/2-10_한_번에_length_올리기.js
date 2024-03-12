@@ -11,6 +11,15 @@ obj13.push(6)
 console.log(obj13)
 console.log(obj13.length)
 
+// ['length'] 로 참조 및 할당
+console.log(obj13['len' + 'gth']) // 7
+obj13['len' + 'gth'] = 10
+console.log(obj13.length) // 10
+obj13.push(11)
+console.log(obj13)
+
+// 객체는 key의 참조, 수정 등에 제약이 없고 유연하다
+
 // 성능 비교
 var l = 100_000
 var list = []
@@ -47,3 +56,5 @@ for(var i=0;i<l;i++) {
 // 카일 심슨의 You Don't Know JS - 타입과 문법 중...
 console.log(Array.apply(null, { length: 3 }))
 // [ undefined, undefined, undefined ]
+
+
